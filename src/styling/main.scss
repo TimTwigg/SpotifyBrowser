@@ -200,9 +200,13 @@ p {
     padding: 0 20px;
 }
 
+.content * {
+    margin: 0 5px;
+}
+
 footer {
     color: #{vars.$color-footer};
-    margin: auto 20px 10px auto;
+    margin: auto 10px 0 auto;
     width: fit-content;
 }
 
@@ -218,18 +222,29 @@ nav {
     box-sizing: border-box;
     margin-left: 0;
     overflow: hidden;
-}
 
-nav h3 {
-    margin: 10px 0;
-    text-align: center;
-    width: 100%;
-    padding: 0;
+    h3 {
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    span {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    button {
+        margin: 15px auto;
+    }
 }
 
 .nav-img {
-    max-width: 4em;
-    margin-left: 10px;
+    img {
+        max-height: 6rem;
+        // min-height: 5rem;
+    }
 }
 
 @media (max-width: 550px) {
@@ -240,27 +255,33 @@ nav h3 {
 
 @media (min-width: 550px) {
     .nav-img {
-        display: inline-block;
-        width: 25%;
+        padding: 10px;
     }
 
-    nav h3 {
-        width: 75%;
-        margin: 20px 0 0 0;
-        display: inline-block;
+    nav {
+        span {
+            display: block;
+        }
+
+        button {
+            float: right;
+        }
     }
 }
 
-@media (min-width: 1000px) {
-    nav h3 {
-        width: 35%;
-        margin: 10px 10px;
-        text-align: right;
-    }
-
+@media (min-width: 750px) {
     .nav-img {
-        width: 30%;
+        padding: 5px;
     }
+}
+
+/*
+* Images
+* ––––––––––––––––––––––––––––––––––––––––––––––––––
+*/
+
+span.image-wrapper {
+    margin-left: 10px;
 }
 
 /*
@@ -270,6 +291,9 @@ nav h3 {
 
 a {
     color: #{vars.$color-links};
+    border-bottom: 1px solid #{vars.$border-color-links};
+    width: fit-content;
+    text-decoration: none;
 }
 a:hover {
     color: #{vars.$color-links-hover};
@@ -280,15 +304,11 @@ a:hover {
 * ––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 
-.button,
-button,
-input[type = "submit"],
-input[type = "reset"],
-input[type = "button"] {
-    display: inline-block;
+button {
     height: 38px;
     padding: 0 30px;
-    color: #{vars.$color-links};
+    margin: 10px;
+    color: #{vars.$color-buttons};
     background-color: #{vars.$background-color-buttons};
     text-align: center;
     font-size: 11px;
@@ -306,8 +326,9 @@ input[type = "button"] {
 
 .button:hover,
 button:hover {
-    color: #C7B9B9;
-    background-color: #4B6B56;
+    color: #{vars.$color-buttons-hover};
+    background-color: #{vars.$background-color-buttons-hover};
+    border-color: #{vars.$border-color-buttons-hover};
     outline: 0;
 }
 
@@ -450,22 +471,6 @@ hr {
 
 .double.spacer {
     height: 1em;
-}
-
-.footer.spacer {
-    height: 3em;
-}
-
-@media (min-width: 1000px) {
-    .footer.spacer {
-        height: 1.5em;
-    }
-}
-
-@media (min-width: 1200px) {
-    .footer.spacer {
-        height: 0.5em;
-    }
 }
 
 /*

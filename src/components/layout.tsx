@@ -16,22 +16,27 @@ const Layout = ({ title, children } : DataProps) => {
     return (
         <div className = "layout">
             <nav>
-                <Link to = "/">
-                    <h3>Spotify Browser</h3>
-                </Link>
-                <span className = "logInSpace">
+                <span className = "nav-img three columns">
+                    <StaticImage src = "./../images/spotifyLogo.png" alt = "Spotify" className = ""/>
+                </span>
+                <h3 className = "five columns">
+                    <Link to = "/">
+                        Spotify Browser
+                    </Link>
+                </h3>
+                <span className = "three columns offset-by-one column">
                     <button id = "logInButton" onClick = {() => {logIn()}}>Log In</button>
                     <p id = "logInP" className = "hidden"/>
                 </span>
             </nav>
-            <main className = "container">
+            <main>
                 {children}
             </main>
             <div className = "double spacer"/>
             <footer>
                 This site made with Gatsby <StaticImage src = "./../images/gatsbyIcon.png" alt = "" width = {20}/>.
             </footer>
-            <div className = "footer spacer"/>
+            <div className = "double spacer"/>
         </div>
     );
 }

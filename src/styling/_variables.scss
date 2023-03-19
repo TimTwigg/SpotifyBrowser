@@ -1,20 +1,33 @@
 // global color themes
 
-$color: #C7B9B9;
-$color-nav: #AB8D59;
-$color-footer: white;
-$color-links: #AB8D59;
-$color-links-hover: #C7B9B9;
-$color-form: #555555;
+// Spotify official color scheme
+$SpotifyGreen: #1DB954;
+$SpotifyBlack: #191414;
+$white: #dfdfdf;
 
-$background-color: #C7B9B9;
-$background-color-main: #4B6B56;
-$background-color-nav: #14312C;
-$background-color-buttons: #14312C;
+// Text colors
+$color: $white;
+$color-nav: $SpotifyGreen;
+$color-footer: $white;
+$color-links: $white;
+$color-links-hover: $white;
+$color-form: #555555;
+$color-buttons: $white;
+$color-buttons-hover: $SpotifyBlack;
+
+// Background colors
+$background-color: rgb(88, 88, 88);
+$background-color-main: gray;
+$background-color-nav: $SpotifyBlack;
+$background-color-buttons: $SpotifyGreen;
+$background-color-buttons-hover: $white;
 $background-color-form: #FFFFFF;
 
-$border-color-buttons: #AB8D59;
+// Border colors
+$border-color-buttons: $white;
 $border-color-table: #E1E1E1;
 $border-color-form: #D1D1D1;
 $border-color-form-focus: #33C3F0;
-$border-color-hr: #E1E1E1;
+$border-color-hr: $white;
+$border-color-links: $SpotifyGreen;
+$border-color-buttons-hover: $SpotifyBlack;

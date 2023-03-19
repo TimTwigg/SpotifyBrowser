@@ -16,7 +16,8 @@
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 
-
+https://stackoverflow.com/questions/49299309/gatsbyjs-getting-data-from-restful-api
+https://stackoverflow.com/questions/61645732/is-there-a-good-react-carousel-components-that-will-work-with-gatsby-image
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
