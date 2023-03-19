@@ -1,49 +1,38 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+--Readme document for Tim Twigg, ttwigg@uci.edu, 68232280--
 
-## 🚀 Quick start
+1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-1.  **Create a Gatsby site.**
+*/15
+- */5 Created a functional web app
+- */2 The ability to control the web app with basic gestures
+- */4 The ability to control the web app with at least two custom gestures
+- */2 Following good principles of UI design
+- */1 Creating a compelling app and application of gestures
+- */1 A readme and demo video which explains how these features were implemented and their design rationale
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+2. How long, in hours, did it take you to complete this assignment?
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+5.5 hours init
 
-2.  **Start developing.**
+3. What online resources did you consult when completing this assignment? (list specific URLs)
 
-    Navigate into your new site’s directory and start it up.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
+4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-    Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
 
-4.  **Learn more**
+5. Is there anything special we need to know in order to run your code?
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-## 🚀 Quick start (Netlify)
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+--Aim for no more than two sentences for each of the following questions.--
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+
+6. Did you design your app with a particular type of user in mind? If so, whom?
+
+
+7. Describe the two custom gestures you created.
+
+
+8. How does your app implement or follow principles of good UI design?
