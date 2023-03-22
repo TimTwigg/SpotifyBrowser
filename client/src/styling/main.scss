@@ -183,6 +183,9 @@ h5 {
 main {
     background-color: #{vars.$background-color-main};
     border-radius: 0 0 10px 10px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .layout {
@@ -202,6 +205,10 @@ p {
 
 .content * {
     margin: 0 5px;
+
+    div.searchResults {
+        display: block;
+    }
 }
 
 footer {
@@ -243,7 +250,6 @@ nav {
 .nav-img {
     img {
         max-height: 6rem;
-        // min-height: 5rem;
     }
 }
 
@@ -280,8 +286,10 @@ nav {
 * ––––––––––––––––––––––––––––––––––––––––––––––––––
 */
 
-span.image-wrapper {
-    margin-left: 10px;
+.image-wrapper {
+    img {
+        max-height: 30rem;
+    }
 }
 
 /*

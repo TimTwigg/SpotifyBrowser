@@ -2,17 +2,16 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import "./../styling/main.scss"
+import { SpotifyService } from "../services/spotifyService";
 
 type DataProps = {
     title: string,
     children: any
 }
 
-function logIn() {
-
-}
-
 const Layout = ({ title, children } : DataProps) => {
+    const service = new SpotifyService;
+
     return (
         <div className = "layout">
             <nav>
@@ -25,7 +24,9 @@ const Layout = ({ title, children } : DataProps) => {
                     </Link>
                 </h3>
                 <span className = "three columns offset-by-one column">
-                    <button id = "logInButton" onClick = {() => {logIn()}}>Log In</button>
+                    <Link to = "http://localhost:8888/login">
+                        <button id = "logInButton" onClick = {() => {}}>Log In</button>
+                    </Link>
                     <p id = "logInP" className = "hidden"/>
                 </span>
             </nav>
