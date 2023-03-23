@@ -13,7 +13,9 @@ const Layout = ({ title, children } : DataProps) => {
         <div className = "layout">
             <nav>
                 <span className = "nav-img three columns">
-                    <StaticImage src = "./../images/spotifyLogo.png" alt = "Spotify" className = ""/>
+                    <a href = "https://open.spotify.com/" className = "borderless" target = "_blank">
+                        <StaticImage src = "./../images/spotifyLogo.png" alt = "Spotify" className = ""/>
+                    </a>
                 </span>
                 <h3 className = "five columns">
                     <Link to = "/">

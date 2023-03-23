@@ -21,7 +21,7 @@ const Slider = ({ resources } : CarouselProps) => {
     }
 
     return (
-        <div>
+        <div className = "linkCursor">
             {resources.length > 0 &&
                 <Carousel infiniteLoop = {true} showThumbs = {false} width = {300} showStatus = {false} showIndicators = {false} onClickItem = {goto}>
                     {

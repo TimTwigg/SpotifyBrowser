@@ -27,8 +27,8 @@ None
 
 5. Is there anything special we need to know in order to run your code?
 
-cd into the webserver directory and run "npm start"
-In second terminal, cd into the client directory and run "npm run develop"
+cd into the webserver directory and run "npm i" then "npm start"
+In second terminal, cd into the client directory and run "npm i" then "npm run develop"
 
 The second command may take a minute or two as Gatsby builds the page.
 The page will open automatically when it is built. Click the login button to log in and
