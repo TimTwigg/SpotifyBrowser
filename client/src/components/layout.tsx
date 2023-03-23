@@ -2,7 +2,6 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import "./../styling/main.scss"
-import { SpotifyService } from "../services/spotifyService";
 
 type DataProps = {
     title: string,
@@ -10,8 +9,6 @@ type DataProps = {
 }
 
 const Layout = ({ title, children } : DataProps) => {
-    const service = new SpotifyService;
-
     return (
         <div className = "layout">
             <nav>
@@ -24,10 +21,11 @@ const Layout = ({ title, children } : DataProps) => {
                     </Link>
                 </h3>
                 <span className = "three columns offset-by-one column">
-                    <Link to = "http://localhost:8888/login">
-                        <button id = "logInButton" onClick = {() => {}}>Log In</button>
-                    </Link>
-                    <p id = "logInP" className = "hidden"/>
+                    {title == "Home" &&
+                        <Link to = "http://localhost:8888/login">
+                            <button id = "logInButton" onClick = {() => {}}>Log In</button>
+                        </Link>
+                    }
                 </span>
             </nav>
             <main>
@@ -35,7 +33,7 @@ const Layout = ({ title, children } : DataProps) => {
             </main>
             <div className = "double spacer"/>
             <footer>
-                This site made with Gatsby <StaticImage src = "./../images/gatsbyIcon.png" alt = "" width = {20}/>.
+                This site made with React Gatsby <StaticImage src = "./../images/gatsbyIcon.png" alt = "" width = {20}/>.
             </footer>
             <div className = "double spacer"/>
         </div>

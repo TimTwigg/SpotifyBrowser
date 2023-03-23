@@ -1,4 +1,3 @@
-// import { useState, useEffect } from "react";
 import { ArtistData } from '../data/artist-data';
 import { AlbumData } from '../data/album-data';
 import { TrackData } from '../data/track-data';
@@ -8,9 +7,6 @@ import { TrackFeature } from '../data/track-feature';
 
 export class SpotifyService {
     expressBaseUrl: string = "http://localhost:8888";
-    // __state = useState([]);
-    // posts = this.__state[0];
-    // setPosts = this.__state[1];
 
     constructor() { }
 
@@ -22,13 +18,12 @@ export class SpotifyService {
 
     async aboutMe():Promise<ProfileData> {
         const data = await this.sendRequestToExpress('/me');
-        console.log(data);
         return new ProfileData(data);
-        // return null as any;
     }
 
     async searchFor(category:string, resource:string):Promise<ResourceData[]> {
         const data = await this.sendRequestToExpress("/search/" + category + "/" + encodeURIComponent(resource));
+        if (data == undefined) return null as any;
         return data[category + "s"]["items"].map((ob: Object) => {
             return category == "artist" ? new ArtistData(ob) : category == "album" ? new AlbumData(ob) : new TrackData(ob);
         });

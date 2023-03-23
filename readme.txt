@@ -1,40 +1,48 @@
---Readme document for Tim Twigg, ttwigg@uci.edu, 68232280--
+-- Readme document for Tim Twigg, ttwigg@uci.edu, 68232280 --
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
-*/15
-- */5 Created a functional web app
-- */2 The ability to control the web app with basic gestures
-- */4 The ability to control the web app with at least two custom gestures
-- */2 Following good principles of UI design
-- */1 Creating a compelling app and application of gestures
-- */1 A readme and demo video which explains how these features were implemented and their design rationale
+15/15
+- 1/1 Communication with the Webserver
+- 5/5 Spotify Browser Home Page
+- 3/3 Spotify Browser Artist Page
+- 2/2 Spotify Browser Album Page
+- 2/2 Spotify Browser Track Page
+- 2/2 A readme which explains how these features were implemented and their design rationale
 
 2. How long, in hours, did it take you to complete this assignment?
 
-9 hours
+23 hours
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 
-https://stackoverflow.com/questions/49299309/gatsbyjs-getting-data-from-restful-api
-https://stackoverflow.com/questions/61645732/is-there-a-good-react-carousel-components-that-will-work-with-gatsby-image
-https://stackoverflow.com/questions/75309249/spotify-api-returning-invalid-refresh-token-even-though-the-refresh-token-is-new
+https://www.gatsbyjs.com/docs/
+https://www.npmjs.com/package/react-responsive-carousel
+https://www.npmjs.com/package/@ramonak/react-progress-bar
+https://developer.spotify.com/documentation/general/design-and-branding/
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-
+None
 
 5. Is there anything special we need to know in order to run your code?
 
+cd into the webserver directory and run "npm start"
+In second terminal, cd into the client directory and run "npm run develop"
 
+The second command may take a minute or two as Gatsby builds the page.
+The page will open automatically when it is built. Click the login button to log in and
+then navigate the page identically to A3.
 
---Aim for no more than two sentences for each of the following questions.--
+6. How did you implement the Assignment 3 Features?
 
+I followed the same basic page design for each page, implementing the same thing in Gatsby React instead of Angular.
+Each page is implemented as a function in a .tsx file in the src/pages directory, with components such as the page layout,
+carousel, and tracklist table implemented separately in the src/components directory, also as functions in a .tsx file.
+The src/pages/index.tsx file is the homepage (this name is required by Gatsby) and Gatsby automatically generates the
+routing.
+I reused the server code from Assignment 3.
 
-6. Did you design your app with a particular type of user in mind? If so, whom?
+7. What was your design rationale?
 
-
-7. Describe the two custom gestures you created.
-
-
-8. How does your app implement or follow principles of good UI design?
+I reused the basic page design from Assignment 3, but adapted the color scheme to fit with Spotify's official color scheme.

@@ -1,8 +1,8 @@
 import * as React from "react"
-import { HeadFC, PageProps } from "gatsby"
+import { HeadFC } from "gatsby"
 import Layout from "../components/layout"
 
-const NotFoundPage: React.FC<PageProps> = () => {
+const NotFoundPage = () => {
     return (
         <Layout title = "Not Found">
             <h1>Page Not Found</h1>

@@ -4,13 +4,15 @@
 $SpotifyGreen: #1DB954;
 $SpotifyBlack: #191414;
 $white: #dfdfdf;
+$orange: rgb(245, 162, 9);
 
 // Text colors
 $color: $white;
 $color-nav: $SpotifyGreen;
 $color-footer: $white;
-$color-links: $white;
+$color-links: $orange;
 $color-links-hover: $white;
+$color-nav-link: $white;
 $color-form: #555555;
 $color-buttons: $white;
 $color-buttons-hover: $SpotifyBlack;
@@ -25,9 +27,16 @@ $background-color-form: #FFFFFF;
 
 // Border colors
 $border-color-buttons: $white;
-$border-color-table: #E1E1E1;
 $border-color-form: #D1D1D1;
 $border-color-form-focus: #33C3F0;
 $border-color-hr: $white;
 $border-color-links: $SpotifyGreen;
 $border-color-buttons-hover: $SpotifyBlack;
+
+// table colors
+$table-background: $white;
+$table-alt-row: rgb(207, 207, 207);
+$table-color: $SpotifyBlack;
+$table-link-color: $orange;
+$table-border-color: $SpotifyBlack;
+$table-link-hover-color: $SpotifyBlack;

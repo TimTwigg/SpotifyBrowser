@@ -101,7 +101,7 @@ router.get('*', function(req, res, next) {
 
 router.get('/', function(req, res, next) {
 	res.writeHead(200);
-	res.end("Proxy Server is Running!, visit localhost:4200 to view your web app.");
+	res.end("Proxy Server is Running!, visit localhost:8000 to view your web app.");
 });
 
 router.get('/login', function(req, res, next) {
