@@ -1,3 +1,5 @@
+# Demo of the Spotify Browser
+
 The browser opens on the home page:
 <img src = "home.JPG">
 
