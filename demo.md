@@ -1,10 +1,3 @@
-<style>
-    img {
-        max-width: 80%;
-        display: block;
-    }
-</style>
-
 The browser opens on the home page:
 <img src = "home.JPG">
 
